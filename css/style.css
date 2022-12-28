@@ -114,6 +114,7 @@ hr {
 }
 
 #quote-field {
+    padding-top: 4rem;
     height: 26rem;
 }
 
@@ -122,6 +123,7 @@ hr {
 }
 
 #quote-author {
+    padding-top: 2rem;
     padding-left: 70%;
 }
 
