@@ -1,0 +1,158 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Typography */
+
+html {
+    font-size: 100%;
+} /*16px*/
+
+body {
+    background: white;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #000000;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 3rem 0 1.38rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.383rem;
+}
+
+h2 {
+    font-size: 1.296rem;
+}
+
+h3 {
+    font-size: 1.215rem;
+}
+
+h4 {
+    font-size: 1.138rem;
+}
+
+h5 {
+    font-size: 1.067rem;
+}
+
+small,
+.text_small {
+    font-size: 0.875rem;
+}
+
+/* Styles */
+
+html,
+body {
+    height: 100%;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+main {
+    padding-top: 1.5rem;
+    height: 30rem;
+}
+
+a,
+a:visited {
+    color: #5b80d0;
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #1d3c7f;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-position: under;
+    text-decoration-color: #dfdfdf;
+    cursor: grab;
+}
+
+hr {
+    opacity: 50%;
+}
+
+#title {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+#quote-field {
+    height: 25rem;
+}
+
+#quote-text {
+    padding-bottom: 2rem;
+}
+
+#quote-author {
+    padding-left: 70%;
+}
+
+#button-refresh {
+    text-align: right;
+    padding-left: 70%;
+}
+
+#description {
+    padding-top: 3rem;
+}
+
+#footer-field {
+    height: 20rem;
+    text-align: center;
+}
+
+#footer-text {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 60rem) {
+    body {
+        width: 20rem;
+        padding: 2rem 1.5rem;
+    }
+}
