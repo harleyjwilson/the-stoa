@@ -166,7 +166,12 @@ hr {
     }
 
     #quote-field {
+        padding-top: 0rem;
         height: 21rem;
+    }
+    
+    #quote-text {
+        padding-bottom: 0rem;
     }
 
     #quote-author {
@@ -187,9 +192,14 @@ hr {
     #description {
         padding-top: 0rem;
     }
-    
+
     #quote-field {
+        padding-top: 0rem;
         height: 17rem;
+    }
+
+    #quote-text {
+        padding-bottom: 0rem;
     }
 
     #quote-author {
