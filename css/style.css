@@ -122,8 +122,8 @@ hr {
 }
 
 #quote-author {
-    padding-top: 2rem;
-    padding-left: 70%;
+    padding: 2rem 4rem 0 0;
+    float: right;
 }
 
 #button-refresh {
@@ -174,7 +174,7 @@ hr {
     }
 
     #quote-author {
-        padding-left: 60%;
+        padding-right: 2rem;
     }
 }
 
@@ -202,6 +202,6 @@ hr {
     }
 
     #quote-author {
-        padding-left: 45%;
+        padding-right: 2rem;
     }
 }
