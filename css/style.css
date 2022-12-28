@@ -74,7 +74,7 @@ small,
 html,
 body {
     height: 100%;
-    width: 40rem;
+    width: 42rem;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -127,7 +127,7 @@ hr {
 
 #button-refresh {
     text-align: right;
-    padding-left: 70%;
+    padding-left: 75%;
 }
 
 #description {
@@ -153,6 +153,6 @@ hr {
 @media (max-width: 60rem) {
     body {
         width: 20rem;
-        padding: 2rem 1.5rem;
+        padding: 2rem 1rem;
     }
 }
