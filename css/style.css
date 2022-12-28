@@ -83,7 +83,7 @@ body {
 
 main {
     padding-top: 1.5rem;
-    height: 30rem;
+    height: 35rem;
 }
 
 a,
@@ -114,7 +114,7 @@ hr {
 }
 
 #quote-field {
-    height: 25rem;
+    height: 22rem;
 }
 
 #quote-text {
@@ -154,11 +154,19 @@ hr {
     body {
         width: 30rem;
     }
+
+    #quote-author {
+        padding-left: 60%;
+    }
 }
 
 @media (max-width: 30rem) {
     html,
     body {
         width: 20rem;
+    }
+
+    #quote-author {
+        padding-left: 45%;
     }
 }
