@@ -1,4 +1,4 @@
-import { quote } from "./data.js";
+import { quote } from "data.js";
 
 window.addEventListener("load", function () {
     let randNo;
