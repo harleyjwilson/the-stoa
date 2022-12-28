@@ -126,8 +126,7 @@ hr {
 }
 
 #button-refresh {
-    text-align: right;
-    padding-left: 75%;
+    float: right;
 }
 
 #description {
@@ -150,9 +149,16 @@ hr {
     margin-right: auto;
 }
 
-@media (max-width: 60rem) {
+@media (max-width: 42rem) {
+    html,
+    body {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    html,
     body {
         width: 20rem;
-        padding: 2rem 1rem;
     }
 }
