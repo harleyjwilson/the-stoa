@@ -74,6 +74,11 @@ small,
 
 /* Styles */
 
+:root {
+    --link-color: #2563eb;
+    --link-highlight: #1e40af;
+}
+
 html,
 body {
     height: 100%;
@@ -90,14 +95,14 @@ main {
 
 a,
 a:visited {
-    color: #5b80d0;
+    color: var(--link-color);
     display: inline-block;
     text-decoration: none;
 }
 
 a:hover,
 a:active {
-    color: #1d3c7f;
+    color: var(--link-highlight);
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-position: under;
@@ -134,14 +139,14 @@ hr {
     all: unset;
     cursor: pointer;
     float: right;
-    color: #5b80d0;
+    color: var(--link-color);
     text-decoration: none;
 }
 
 #button-refresh:focus,
 #button-refresh:active,
 #button-refresh:hover {
-    color: #1d3c7f;
+    color: var(--link-highlight);
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-position: under;
