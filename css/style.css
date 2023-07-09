@@ -18,7 +18,9 @@ img {
 
 html {
     font-size: 100%;
-} /*16px*/
+}
+
+/*16px*/
 
 body {
     background: white;
@@ -127,8 +129,29 @@ hr {
     float: right;
 }
 
-#button-refresh {
+#button-refresh,
+#button-refresh:visited {
+    all: unset;
+    cursor: pointer;
     float: right;
+    color: #5b80d0;
+    text-decoration: none;
+}
+
+#button-refresh:focus,
+#button-refresh:active,
+#button-refresh:hover {
+    color: #1d3c7f;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-position: under;
+    text-decoration-color: #dfdfdf;
+    cursor: grab;
+}
+
+#button-refresh:focus {
+    outline: 1px dotted #212121;
+    outline: 5px auto -webkit-focus-ring-color;
 }
 
 #description {
@@ -185,12 +208,14 @@ hr {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
 
 @media (max-width: 42rem) {
+
     html,
     body {
         width: 30rem;
@@ -219,6 +244,7 @@ hr {
 }
 
 @media (max-width: 30rem) {
+
     html,
     body {
         width: 20rem;
