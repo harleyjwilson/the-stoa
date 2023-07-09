@@ -1,30 +1,30 @@
-import { quote } from "./data.js";
+import { QUOTE } from "./data.js";
 
 window.addEventListener("load", function () {
-    let randNo;
-    randNo = newQuote(randNo);
+    let randNo = getRandomNumber(null);
+    getNewQuote(randNo);
 
-    const button = document.getElementById("button-refresh");
-    button.addEventListener("click", () => {
-        randNo = newQuote(randNo);
+    document.querySelector("#button-refresh").addEventListener("click", () => {
+        randNo = getRandomNumber(randNo);
+        getNewQuote(randNo);
     });
 });
 
-function newQuote(randNo) {
-    let tempRandNo;
+const getRandomNumber = (oldRandomNumber) => {
+    let newRandomNumber;
     do {
-        tempRandNo = Math.floor(Math.random() * quote.length);
-    } while (tempRandNo == randNo);
-    randNo = tempRandNo;
-    console.log("Quote number: " + (randNo + 1));
+        newRandomNumber = Math.floor(Math.random() * QUOTE.length);
+    } while (newRandomNumber === oldRandomNumber);
+    console.log(`newRandomNumber=${newRandomNumber}`);
+    return newRandomNumber;
+};
 
-    document.getElementById("quote-text").innerHTML = quote[randNo].text;
-    if (quote[randNo].author == "") {
-        document.getElementById("quote-author").innerHTML = "– Unknown";
-    } else {
-        document.getElementById("quote-author").innerHTML =
-            "– " + quote[randNo].author;
-    }
-
-    return randNo;
-}
+const getNewQuote = (quoteIndex) => {
+    document.getElementById("quote-text").innerHTML = QUOTE[quoteIndex].text;
+    QUOTE[quoteIndex].author === undefined
+        ? (document.getElementById("quote-author").innerHTML = "- Unknown")
+        : (document.getElementById(
+              "quote-author"
+          ).innerHTML = `- ${QUOTE[quoteIndex].author}`);
+    console.log(QUOTE[quoteIndex]);
+};

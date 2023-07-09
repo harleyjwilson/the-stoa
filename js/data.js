@@ -1,4 +1,4 @@
-export const quote = [
+export const QUOTE = [
     {
         text: "Waste no more time arguing what a good man should be. Be One.",
         author: "Marcus Aurelius",
